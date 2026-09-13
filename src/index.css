@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #131316;
+  --color-surface-dim: #131316;
+  --color-surface-bright: #39393c;
+  --color-surface-container-lowest: #0e0e11;
+  --color-surface-container-low: #1b1b1e;
+  --color-surface-container: #1f1f22;
+  --color-surface-container-high: #2a2a2d;
+  --color-surface-container-highest: #353438;
+  --color-on-surface: #e4e1e6;
+  --color-on-surface-variant: #e2bfb2;
+  --color-outline: #a98a7e;
+  --color-outline-variant: #5a4138;
+  --color-primary: #ffb599;
+  --color-primary-container: #f66018;
+  --color-on-primary: #5a1c00;
+  --color-on-primary-container: #4f1700;
+  --color-secondary: #ffb59c;
+  --color-secondary-container: #ff5708;
+  --color-on-secondary: #5c1900;
+  --color-on-secondary-container: #511500;
+  --color-tertiary: #c6c6cf;
+  --color-tertiary-container: #909099;
+  --color-error: #ffb4ab;
+  --color-amber-led: #ff5500;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+/* Base custom styles */
+body {
+  font-family: var(--font-display);
+  background-color: #131316;
+  color: #e4e1e6;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Quartz date glowing text effect */
+.quartz-date-glow {
+  color: #ff5500;
+  text-shadow: 0 0 6px rgba(255, 85, 0, 0.9), 0 0 12px rgba(255, 85, 0, 0.4);
+  font-family: 'Space Mono', monospace;
+}
+
+/* Debossed hardware text */
+.hardware-engraved {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 -1px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Tactile metallic screw head */
+.screw-head {
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Custom range slider styling for vintage emulsion controls */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #2a2a2d;
+  height: 6px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.8);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ff5708;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 87, 8, 0.6), inset 0 1px 1px rgba(255,255,255,0.4);
+  border: 2px solid #131316;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ff5708;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 87, 8, 0.6), inset 0 1px 1px rgba(255,255,255,0.4);
+  border: 2px solid #131316;
+}

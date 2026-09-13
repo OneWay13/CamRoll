@@ -1,0 +1,6 @@
+{
+  "name": "AnalogWeb - Point & Shoot RetroCam",
+  "description": "A vintage 90s analog point-and-shoot camera web application with real-time film emulsion filters, procedural grain, light leaks, and glowing quartz date stamps.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
